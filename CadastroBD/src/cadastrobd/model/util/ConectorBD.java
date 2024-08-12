@@ -17,7 +17,9 @@ public class ConectorBD {
     public static Connection getConnection() {
         if (conn == null) {
             try {
-                String url = "jdbc:sqlserver:// localhost\MSMANM-039\SQLEXPRESS:1433;databaseName=loja;encrypt=true;trustServerCertificate=true;";
+                String url = "jdbc:sqlserver://localhost\\MSMANM-039\\SQLEXPRESS:1433;databaseName=loja;encrypt=true;trustServerCertificate=true;";
+
+
                 String user = "loja";
                 String password = "admin1010";
                 conn = DriverManager.getConnection(url, user, password);
